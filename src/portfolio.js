@@ -147,6 +147,11 @@ const certifications = {
   ],
 };
 
+const openSource = {
+  githubUserName: "AmberTran129",
+  showGithubProfile: "false", // set "true" if you want GitHub section visible
+};
+
 export {
   greeting,
   socialMediaLinks,
@@ -155,6 +160,7 @@ export {
   educationInfo,
   certifications,
   contactInfo,
+  openSource,
   isHireable,
 };
 
