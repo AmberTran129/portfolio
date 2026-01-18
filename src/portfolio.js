@@ -1,195 +1,192 @@
-/* ======================================================
-   Personal Portfolio Configuration
-   SAFE VERSION – DO NOT DELETE SECTIONS
-   ====================================================== */
+/* Change this file to get your personal Portfolio */
 
-/* ========= Hire Status ========= */
-const isHireable = true;
+import emoji from "react-easy-emoji";
+import splashAnimation from "./assets/lottie/splashAnimation";
 
-/* ========= Greeting ========= */
-const greeting = {
-  title: "Hi, I'm Anh 👋",
-  subtitle:
-    "Business-oriented Product Owner & Business Analyst with 6+ years of experience delivering ERP & SaaS platforms across logistics, telecom, and accounting domains.",
-  resumeLink: "https://drive.google.com/file/d/1kVezxnoBUwEFfsrU4cPr0XchYGzDNOQX/view?usp=sharing", // Optional: Google Drive CV link
+/* Splash Screen */
+const splashScreen = {
+  enabled: false,
+  animation: splashAnimation,
+  duration: 2000
 };
 
-/* ========= Social Media ========= */
+/* Illustration */
+const illustration = {
+  animated: true
+};
+
+/* Greeting */
+const greeting = {
+  username: "Tran Thi Ngoc Anh",
+  title: "Hi, I'm Anh 👋",
+  subTitle: emoji(
+    "Business-oriented Product Owner & Business Analyst with 6+ years of experience delivering ERP & SaaS platforms across Logistics, Telecom, and Accounting domains."
+  ),
+  resumeLink: "",
+  displayGreeting: true
+};
+
+/* Social Media */
 const socialMediaLinks = {
+  github: "",
   linkedin: "https://linkedin.com/in/tran-ngocanh",
   gmail: "anhthingoctran129@gmail.com",
+  gitlab: "",
+  facebook: "",
+  medium: "",
+  stackoverflow: "",
+  display: true
 };
 
-/* ========= Skills ========= */
+/* Skills */
 const skillsSection = {
   title: "Core Skills",
-  subTitle:
-    "Product Management, Business Analysis, ERP / SaaS, Agile Delivery",
-
+  subTitle: "Product Management • Business Analysis • ERP / SaaS",
   skills: [
-    "⚡ Product vision, roadmap, backlog grooming & prioritization",
-    "⚡ User stories & acceptance criteria (INVEST, Gherkin)",
-    "⚡ ERP & SaaS domains: CRM, Accounting, Inventory, Logistics",
-    "⚡ API & integration analysis (REST / GraphQL)",
-    "⚡ Agile ceremonies: Sprint planning, review, retrospective",
-    "⚡ UAT leadership, training, and stakeholder communication",
+    emoji("⚡ Product roadmap, backlog grooming & prioritization"),
+    emoji("⚡ User stories & acceptance criteria (INVEST, Gherkin)"),
+    emoji("⚡ ERP/SaaS: Accounting, CRM, Inventory, Logistics"),
+    emoji("⚡ API & integration analysis (REST / GraphQL)"),
+    emoji("⚡ Agile delivery & UAT leadership")
   ],
-
-  softwareSkills: [
-    { skillName: "Jira", iconName: "simple-icons:jira" },
-    { skillName: "Confluence", iconName: "simple-icons:confluence" },
-    { skillName: "PostgreSQL", iconName: "simple-icons:postgresql" },
-    { skillName: "MongoDB", iconName: "simple-icons:mongodb" },
-    { skillName: "GraphQL", iconName: "simple-icons:graphql" },
-    { skillName: "AWS", iconName: "simple-icons:amazonaws" },
-    { skillName: "Figma", iconName: "simple-icons:figma" },
-  ],
+  softwareSkills: [],
+  display: true
 };
 
-/* ========= Work Experience ========= */
+/* Education */
+const educationInfo = {
+  display: true,
+  schools: [
+    {
+      schoolName: "Nha Trang University",
+      logo: require("./assets/images/harvardLogo.png"),
+      subHeader: "Bachelor of Management Information Systems (MIS)",
+      duration: "2016 – 2020",
+      desc: "Merit Scholarships (2018–2020). Strong foundation in systems analysis and business web design.",
+      descBullets: []
+    }
+  ]
+};
+
+/* Tech Stack (KEEP EVEN IF UNUSED) */
+const techStack = {
+  viewSkillBars: false,
+  experience: [],
+  displayCodersrank: false
+};
+
+/* Work Experience */
 const workExperiences = {
-  title: "Professional Experience",
+  display: true,
   experience: [
     {
       role: "Proxy Product Owner",
       company: "CyberLogitec Vietnam",
-      companylogo: "img/icons/common/cyberlogitec.png",
+      companylogo: require("./assets/images/facebookLogo.png"),
       date: "Mar 2024 – Present",
       desc:
-        "Owned product vision and roadmap for Facility Management modules within a logistics ERP ecosystem.",
-      descBullets: [
-        "Defined product roadmap across Procurement, Facility, and AP modules",
-        "Translated business needs into epics, user stories, and acceptance criteria",
-        "Led Agile ceremonies and backlog prioritization",
-        "Co-designed UI/UX in Figma, improving operational efficiency by 30%",
-        "Delivered milestones on time with strong UAT feedback",
-      ],
-    },
-    {
-      role: "Business Analyst",
-      company: "CyberLogitec Vietnam",
-      companylogo: "img/icons/common/cyberlogitec.png",
-      date: "Jan 2024 – May 2024",
-      desc:
-        "Delivered accounting modules for freight-forwarding SaaS systems.",
-      descBullets: [
-        "Analyzed legacy AR/AP/DC and bank reconciliation workflows",
-        "Produced FRDs, user stories, and test cases",
-        "Collaborated with BI teams for analytics dashboards",
-        "Led UAT testing and user training",
-      ],
+        "Owned product roadmap and delivery for Facility Management modules in logistics ERP."
     },
     {
       role: "Senior Business Analyst",
       company: "FPT Software Vietnam",
-      companylogo: "img/icons/common/fpt.png",
+      companylogo: require("./assets/images/quoraLogo.png"),
       date: "Apr 2023 – Mar 2024",
       desc:
-        "Worked on NextGen ride-hailing platform for ComfortDelGro.",
-      descBullets: [
-        "Delivered roadmaps for loyalty systems and payment API integrations",
-        "Led SIT/UAT across Driver, Passenger, OpenAPI, IVR/SMS systems",
-        "Validated geolocation pipelines for real-time accuracy",
-        "Improved onboarding UX and post-launch retention",
-      ],
-    },
-    {
-      role: "Business Analyst / Product Owner",
-      company: "Infodation Vietnam",
-      companylogo: "img/icons/common/infodation.png",
-      date: "Nov 2020 – Mar 2023",
-      desc:
-        "Delivered telecom SaaS platforms for European clients.",
-      descBullets: [
-        "Managed 100+ features across Availability and Address Management",
-        "Delivered REST & GraphQL API portals",
-        "Completed penetration testing for ISO certification",
-        "Mentored junior BAs, improving team velocity",
-      ],
-    },
-  ],
+        "Delivered ride-hailing and payment integration platforms for ComfortDelGro."
+    }
+  ]
 };
 
-/* ========= Education ========= */
-const educationInfo = {
-  title: "Education",
-  schools: [
-    {
-      schoolName: "Nha Trang University",
-      logo: "img/icons/common/ntu.png",
-      subHeader: "Bachelor of Management Information Systems (MIS)",
-      duration: "2016 – 2020",
-      desc:
-        "Merit Scholarships (2018–2020). Strong foundation in systems analysis, databases, and business web design.",
-    },
-  ],
-};
-
-/* ========= Certifications ========= */
-const certifications = {
-  certifications: [
-    {
-      title: "Professional Scrum Product Owner II",
-      subtitle: "SCRUM.org",
-      date: "Jan 2024",
-    },
-    {
-      title: "Full Business Analysis Study Guide (21 PDUs)",
-      subtitle: "IIBA",
-      date: "Oct 2023",
-    },
-    {
-      title: "Cybersecurity Foundations",
-      subtitle: "Coursera",
-      date: "Mar 2023",
-    },
-    {
-      title: "ASEAN Data Science Explorers",
-      subtitle: "SAP",
-      date: "Aug 2022",
-    },
-  ],
-};
-
-/* ========= Achievements (Required, can be hidden) ========= */
-const achievementSection = {
-  title: "Achievements",
-  subtitle: "",
-  achievementsCards: [],
-  display: false,
-};
-
-/* ========= Open Source (Required, hidden) ========= */
+/* Open Source */
 const openSource = {
-  display: false,
+  showGithubProfile: "false",
+  display: false
 };
 
-/* ========= Blogs (Required, hidden) ========= */
+/* Big Projects */
+const bigProjects = {
+  title: "",
+  subtitle: "",
+  projects: [],
+  display: false
+};
+
+/* Achievements */
+const achievementSection = {
+  title: emoji("Certifications 🏆"),
+  subtitle: "Professional credentials",
+  achievementsCards: [],
+  display: false
+};
+
+/* Blogs */
 const blogSection = {
   title: "Blogs",
   subtitle: "",
+  displayMediumBlogs: "false",
   blogs: [],
-  display: false,
+  display: false
 };
 
-/* ========= Contact ========= */
+/* Talks (THIS WAS YOUR ERROR SOURCE) */
+const talkSection = {
+  title: "Talks",
+  subtitle: "",
+  talks: [],
+  display: false
+};
+
+/* Podcast */
+const podcastSection = {
+  title: emoji("Podcast 🎙️"),
+  subtitle: "",
+  podcast: [],
+  display: false
+};
+
+/* Resume */
+const resumeSection = {
+  title: "Resume",
+  subtitle: "Download my resume",
+  display: false
+};
+
+/* Contact */
 const contactInfo = {
-  title: "Contact Me",
+  title: emoji("Contact Me ☎️"),
   subtitle: "Open to Product Owner / Business Analyst opportunities",
-  email_address: "anhthingoctran129@gmail.com",
+  number: "",
+  email_address: "anhthingoctran129@gmail.com"
 };
 
-/* ========= EXPORTS (DO NOT CHANGE) ========= */
+/* Twitter */
+const twitterDetails = {
+  userName: "",
+  display: false
+};
+
+/* Hire Status */
+const isHireable = true;
+
+/* EXPORTS — DO NOT CHANGE */
 export {
+  illustration,
   greeting,
   socialMediaLinks,
+  splashScreen,
   skillsSection,
-  workExperiences,
   educationInfo,
-  certifications,
-  achievementSection,
+  techStack,
+  workExperiences,
   openSource,
+  bigProjects,
+  achievementSection,
   blogSection,
+  talkSection,
+  podcastSection,
   contactInfo,
+  twitterDetails,
   isHireable,
+  resumeSection
 };
