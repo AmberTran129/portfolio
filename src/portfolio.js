@@ -22,7 +22,7 @@ const greeting = {
   subTitle: emoji(
     "Business-oriented Product Owner & Business Analyst with 6+ years of experience delivering ERP & SaaS platforms across Logistics, Telecom, and Accounting domains."
   ),
-  resumeLink: "",
+  resumeLink: "https://drive.google.com/file/d/1kVezxnoBUwEFfsrU4cPr0XchYGzDNOQX/view?usp=sharing",
   displayGreeting: true
 };
 
@@ -40,32 +40,31 @@ const socialMediaLinks = {
 
 /* Skills */
 const skillsSection = {
-  title: "Core Skills",
-  subTitle: "Product Management • Business Analysis • ERP / SaaS",
+  title: "Core Expertise",
+  subTitle: "Product Ownership, Business Analysis, ERP/SaaS delivery, and data-informed decision making",
   skills: [
-    emoji("⚡ Product roadmap, backlog grooming & prioritization"),
-    emoji("⚡ User stories & acceptance criteria (INVEST, Gherkin)"),
-    emoji("⚡ ERP/SaaS: Accounting, CRM, Inventory, Logistics"),
-    emoji("⚡ API & integration analysis (REST / GraphQL)"),
-    emoji("⚡ Agile delivery & UAT leadership")
+    emoji("⚡ Product vision, roadmap planning, backlog prioritization"),
+    emoji("⚡ User stories, acceptance criteria (INVEST, Gherkin), stakeholder management"),
+    emoji("⚡ ERP & SaaS domains: Logistics, Telecom, Accounting"),
+    emoji("⚡ API-first systems, integrations, and data workflows"),
+    emoji("⚡ Agile delivery, UAT leadership, cross-team collaboration"),
+    emoji("⚡ A picture is worth a thousand words: Simplifying logic with UML & BPMN workflows")
   ],
-  softwareSkills: [],
-  display: true
+  softwareSkills: [
+    { skillName: "Jira", fontAwesomeClassname: "fab fa-jira" },
+    { skillName: "Confluence", fontAwesomeClassname: "fab fa-confluence" },
+    { skillName: "SQL", fontAwesomeClassname: "fas fa-database" },
+    { skillName: "PostgreSQL", fontAwesomeClassname: "fas fa-database" },
+    { skillName: "GraphQL", fontAwesomeClassname: "fas fa-project-diagram" },
+    { skillName: "Figma", fontAwesomeClassname: "fab fa-figma" }
+  ],
+  display: false
 };
 
 /* Education */
 const educationInfo = {
-  display: true,
-  schools: [
-    {
-      schoolName: "Nha Trang University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Bachelor of Management Information Systems (MIS)",
-      duration: "2016 – 2020",
-      desc: "Merit Scholarships (2018–2020). Strong foundation in systems analysis and business web design.",
-      descBullets: []
-    }
-  ]
+  display: false,
+  schools: []
 };
 
 /* Tech Stack (KEEP EVEN IF UNUSED) */
@@ -154,9 +153,8 @@ const resumeSection = {
 
 /* Contact */
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
-  subtitle: "Open to Product Owner / Business Analyst opportunities",
-  number: "",
+  title: emoji("Let’s Connect ☎️"),
+  subtitle: "Open to discussions around Product Ownership, Product Management, ERP/SaaS strategy, and industry insights.",
   email_address: "anhthingoctran129@gmail.com"
 };
 
